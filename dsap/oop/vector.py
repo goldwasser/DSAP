@@ -1,3 +1,7 @@
+"""
+Provides a Vector class representing multidimensional coordinates.
+"""
+
 import collections
 
 class Vector:

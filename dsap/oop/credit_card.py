@@ -1,3 +1,8 @@
+"""
+Provides a CreditCard class as an example of a class definition.
+"""
+
+
 class CreditCard:
     """A consumer credit card."""
 

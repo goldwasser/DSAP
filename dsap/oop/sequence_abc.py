@@ -1,3 +1,7 @@
+"""
+Provides a Sequence abstract base class
+"""
+
 from abc import ABCMeta, abstractmethod                # need these definitions
 
 class Sequence(metaclass=ABCMeta):

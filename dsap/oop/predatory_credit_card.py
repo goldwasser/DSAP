@@ -1,3 +1,7 @@
+"""
+Provides a PredatoryCreditCard class as an example of inheritance.
+"""
+
 from .credit_card import CreditCard
 
 class PredatoryCreditCard(CreditCard):

@@ -1,5 +1,9 @@
+"""
+Provides a Range class that mimics the built-in range class.
+"""
+
 class Range:
-    """A class that mimic's the built-in range class."""
+    """A class that mimics the built-in range class."""
 
     def __init__(self, start, stop=None, step=1):
         """Initialize a Range instance.
