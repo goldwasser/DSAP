@@ -35,8 +35,8 @@ class DynamicArray:
         self._capacity = c
 
     def _make_array(self, c):                          # nonpublic utitity
-     """Return new array with capacity c."""
-          return (c * ctypes.py_object)()              # see ctypes documentation
+        """Return new array with capacity c."""
+        return (c * ctypes.py_object)()                # see ctypes documentation
 
     def insert(self, k, value):
         """Insert value at index k, shifting subsequent values rightward."""

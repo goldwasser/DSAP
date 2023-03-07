@@ -10,8 +10,8 @@ class SortedTableMap(MapBase):
         Return high + 1 if no such item qualifies.
 
         That is, j will be returned such that:
-       all items of slice table[low:j] have key < k
-              all items of slice table[j:high+1] have key >= k
+        all items of slice table[low:j] have key < k
+        all items of slice table[j:high+1] have key >= k
         """
         if high < low:
             return high + 1                                          # no element qualifies

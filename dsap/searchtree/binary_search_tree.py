@@ -272,7 +272,7 @@ class TreeMap(LinkedBinaryTree, MapBase):
     def _rotate(self, p):
         """Rotate Position p above its parent.
 
-        Switches between these configurations, depending on whether p==a or p==b.
+        Switches between these configurations, depending on whether p==a or p==b::
 
                   b                   a
                  / \                 / \
@@ -304,7 +304,7 @@ class TreeMap(LinkedBinaryTree, MapBase):
 
         Return the Position that becomes root of the restructured subtree.
 
-        Assumes the nodes are in one of the following configurations:
+        Assumes the nodes are in one of the following configurations::
 
                z=a                 z=c           z=a               z=c
               /  \                /  \          /  \              /  \
@@ -314,7 +314,7 @@ class TreeMap(LinkedBinaryTree, MapBase):
                  /  \        /  \               /  \              /  \
                 t2  t3      t0  t1             t1  t2            t1  t2
 
-        The subtree will be restructured so that the node with key b becomes its root.
+        The subtree will be restructured so that the node with key b becomes its root::
 
                         b
                       /   \

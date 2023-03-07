@@ -19,7 +19,7 @@ class CostPerformanceDatabase:
         # determine if (c,p) is dominated by an existing pair
         other = self._M.find_le(c)                             # other is at least as cheap as c
         if other is not None and other[1] >= p:                # if its performance is as good,
-        return                                                 # (c,p) is dominated, so ignore
+            return                                             # (c,p) is dominated, so ignore
         self._M[c] = p                                         # else, add (c,p) to database
         # and now remove any pairs that are dominated by (c,p)
         other = self._M.find_gt(c)                             # other more expensive than c

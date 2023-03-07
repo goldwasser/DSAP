@@ -6,11 +6,13 @@ class MultiMap:
 
     Subclasses can override class variable _MapType to change the default.
     That catalog class must have a default constructor that produces an empty map.
-    As an example, one might define the following subclass to use a SortedTableMap
+    As an example, one might define the following subclass to use a SortedTableMap::
 
-    class SortedTableMultimap(MultiMap):
-        _MapType = SortedTableMap
+      class SortedTableMultimap(MultiMap):
+          _MapType = SortedTableMap
+        
     """
+
     _MapType = dict                                    # Map type; can be redefined by subclass
 
     def __init__(self):

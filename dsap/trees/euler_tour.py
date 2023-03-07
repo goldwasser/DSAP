@@ -48,8 +48,7 @@ class EulerTour:
         p        Position of current position being visited
         d        depth of p in the tree
         path     list of indices of children on path from root to p
-        results  is a list of values returned by _hook_postvisit(c)
-            for each child c of p.
+        results  is a list of values returned by _hook_postvisit(c) for each child c of p.
         """
         pass
 
