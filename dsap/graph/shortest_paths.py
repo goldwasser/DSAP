@@ -1,6 +1,6 @@
 from ..pq.adaptable_heap_priority_queue import AdaptableHeapPriorityQueue
 
-def shortest_path_lengths(g, src):
+def shortest_path_distances(g, src):
     """Compute shortest-path distances from src to reachable vertices of g.
 
     Graph g can be undirected or directed, but must be weighted such that
