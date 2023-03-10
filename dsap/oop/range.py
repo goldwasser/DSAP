@@ -17,7 +17,7 @@ class Range:
             start, stop = 0, start              # should be treated as if range(0,n)
 
         # calculate the effective length once
-        self._length = max(0, (stop - start + step - 1) // step)
+        self._length = max(0, (stop - start + step - step/abs(step)) // step)
 
         # need knowledge of start and step (but not stop) to support __getitem__
         self._start = start
