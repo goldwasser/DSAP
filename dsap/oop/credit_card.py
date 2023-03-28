@@ -43,7 +43,7 @@ class CreditCard:
         return self._balance
 
     def charge(self, price):
-        """Charge given price to the card, assuming sufficient credit limit.
+        """Charge the given price to the card, assuming sufficient credit limit.
 
         Return True if charge was processed; False if charge was denied.
         """
