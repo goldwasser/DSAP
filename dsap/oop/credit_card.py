@@ -31,7 +31,7 @@ class CreditCard:
         return self._bank
 
     def get_account(self):
-        """Return the card identifying number (typically stored as a string)."""
+        """Return the card's identifying number (typically stored as a string)."""
         return self._account
 
     def get_limit(self):
