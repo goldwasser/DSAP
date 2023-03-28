@@ -54,7 +54,7 @@ class CreditCard:
             return True
 
     def make_payment(self, amount):
-        """Process customer payment that reduces balance."""
+        """Process customer payment, which reduces balance."""
         self._balance -= amount
 
 if __name__ == '__main__':
