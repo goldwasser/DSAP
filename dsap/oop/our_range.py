@@ -8,7 +8,7 @@ class OurRange:
     def __init__(self, start, stop=None, step=1):
         """Initialize an OurRange instance.
 
-        Semantics is similar to built-in range class.
+        Semantics are similar to the built-in range class.
         """
         if step == 0:
             raise ValueError('step cannot be 0')
