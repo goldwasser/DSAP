@@ -1,20 +1,20 @@
 """
-Provides a Range class that mimics the built-in range class.
+Provides an OurRange class that mimics the built-in range class.
 """
 
-class Range:
+class OurRange:
     """A class that mimics the built-in range class."""
 
     def __init__(self, start, stop=None, step=1):
-        """Initialize a Range instance.
+        """Initialize an OurRange instance.
 
         Semantics is similar to built-in range class.
         """
         if step == 0:
             raise ValueError('step cannot be 0')
 
-        if stop is None:                        # special case of range(n)
-            start, stop = 0, start              # should be treated as if range(0,n)
+        if stop is None:                        # special case of OurRange(n)
+            start, stop = 0, start              # should be treated as if OurRange(0,n)
 
         # calculate the effective length once
         self._length = max(0, (stop - start + step - step/abs(step)) // step)
