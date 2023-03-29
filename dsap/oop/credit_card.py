@@ -58,26 +58,26 @@ class CreditCard:
         self._balance -= amount
 
 if __name__ == '__main__':
-    wallet = []
-    wallet.append(CreditCard('John Bowman', 'California Savings',
-                             '5391 0375 9387 5309', 2500) )
-    wallet.append(CreditCard('John Bowman', 'California Federal',
-                             '3485 0399 3395 1954', 3500) )
-    wallet.append(CreditCard('John Bowman', 'California Finance',
-                             '5391 0375 9387 5309', 5000) )
+    primary_card = CreditCard('John Bowman', 'California Savings', '5391 0375 9387 5309', 2500)
+    rewards_card = CreditCard('John Bowman', 'California Federal', '3485 0399 3395 1954', 3500)
 
-    for val in range(1, 17):
-        wallet[0].charge(val)
-        wallet[1].charge(2*val)
-        wallet[2].charge(3*val)
+    if primary_card.get_bank() != 'California Savings':
+        print('Problem with recording of bank')
+    if rewards_card.get_bank() != 'California Federal':
+        print('Problem with recording of bank')
 
-    for c in range(3):
-        print('Customer =', wallet[c].get_customer())
-        print('Bank =', wallet[c].get_bank())
-        print('Account =', wallet[c].get_account())
-        print('Limit =', wallet[c].get_limit())
-        print('Balance =', wallet[c].get_balance())
-        while wallet[c].get_balance() > 100:
-            wallet[c].make_payment(100)
-            print('New balance =', wallet[c].get_balance())
-        print()
+    rewards_card.charge(1000)
+    if rewards_card.get_balance() != 1000:
+        print('Problem with balance')
+    rewards_card.charge(2000)
+    if rewards_card.get_balance() != 3000:
+        print('Problem with balance')
+
+    # try a failed charge
+    if rewards_card.charge(1000):
+        print('Charge should have been denied')
+    if rewards_card.get_balance() != 3000:
+        print('Failed charge should not have impacted balance')
+
+    if primary_card.get_balance() != 0:
+        print('Problem as primary card should still have zero balance.')
