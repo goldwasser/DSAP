@@ -66,7 +66,8 @@ if __name__ == '__main__':
     if rewards_card.get_bank() != 'California Federal':
         print('Problem with recording of bank')
 
-    rewards_card.charge(1000)
+    if not rewards_card.charge(1000):
+        print('Initial charge of $1000 should not be rejected')
     if rewards_card.get_balance() != 1000:
         print('Problem with balance')
     rewards_card.charge(2000)
