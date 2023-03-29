@@ -74,7 +74,7 @@ if __name__ == '__main__':
     if rewards_card.get_balance() != 3000:
         print('Problem with balance')
 
-    # try a failed charge
+    # try going over the credit limit
     if rewards_card.charge(1000):
         print('Charge should have been denied')
     if rewards_card.get_balance() != 3000:
