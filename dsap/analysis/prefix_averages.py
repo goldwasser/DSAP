@@ -1,5 +1,5 @@
 def prefix_average1(S):
-    """Return list such that, for all j, A[j] equals average of S[0], ..., S[j]."""
+    """Return a list such that, for all j, A[j] equals the average of S[0], ..., S[j]."""
     n = len(S)
     A = [0] * n                       # create new list of n zeros
     for j in range(n):
@@ -10,7 +10,7 @@ def prefix_average1(S):
     return A
 
 def prefix_average2(S):
-    """Return list such that, for all j, A[j] equals average of S[0], ..., S[j]."""
+    """Return a list such that, for all j, A[j] equals the average of S[0], ..., S[j]."""
     n = len(S)
     A = [0] * n                       # create new list of n zeros
     for j in range(n):
@@ -18,7 +18,7 @@ def prefix_average2(S):
     return A
 
 def prefix_average3(S):
-    """Return list such that, for all j, A[j] equals average of S[0], ..., S[j]."""
+    """Return a list such that, for all j, A[j] equals the average of S[0], ..., S[j]."""
     n = len(S)
     A = [0] * n                       # create new list of n zeros
     total = 0                         # compute prefix sum as S[0] + S[1] + ...
