@@ -22,7 +22,7 @@ class DynamicArray:
     def append(self, obj):
         """Add object to end of the array."""
         if self._n == self._capacity:                  # not enough room
-            self._resize(2 * self._capacity)           # so double capacity
+            self._resize(2 * self._capacity)           # so double the capacity
         self._A[self._n] = obj
         self._n += 1
 
@@ -42,7 +42,7 @@ class DynamicArray:
         """Insert value at index k, shifting subsequent values rightward."""
         # (for simplicity, we assume 0 <= k <= n in this verion)
         if self._n == self._capacity:                  # not enough room
-            self._resize(2 * self._capacity)           # so double capacity
+            self._resize(2 * self._capacity)           # so double the capacity
         for j in range(self._n, k, -1):                # shift rightmost first
             self._A[j] = self._A[j-1]
         self._A[k] = value                             # store newest element
