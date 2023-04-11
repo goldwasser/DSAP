@@ -47,7 +47,7 @@ class CircularQueue:
         if self.is_empty():
             raise Empty('Queue is empty')
         oldhead = self._tail._next
-        if self._size == 1:                     # removing only element
+        if self._size == 1:                     # removing the only element
             self._tail = None                   # queue becomes empty
         else:
             self._tail._next = oldhead._next    # bypass the old head
