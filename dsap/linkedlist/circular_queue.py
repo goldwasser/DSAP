@@ -1,6 +1,6 @@
 from ..exceptions import Empty
 
-class CircularQueue:
+class LinkedCircularQueue:
     """Queue implementation using circularly linked list for storage."""
 
     #---------------------------------------------------------------------------------
