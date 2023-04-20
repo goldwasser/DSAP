@@ -43,10 +43,10 @@ def disk_space(T, p):
 
 def layout(T, p, d, x):
     if T.left(p) is not	None:
-        x = layout(T, T.left(p), d+1, x)            #  resulting x will be increased
+        x = layout(T, T.left(p), d+1, x)            # resulting x will be increased
     p.element().setX(x)
     p.element().setY(d)
     x =	x+1   	      	      	       	            # increment x
     if T.right(p) is not None:
-        x = layout(T, T.right(p), d+1, x)           #  resulting x will be increased
+        x = layout(T, T.right(p), d+1, x)           # resulting x will be increased
     return x
