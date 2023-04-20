@@ -40,3 +40,13 @@ def disk_space(T, p):
     for c in T.children(p):
         subtotal += disk_space(T, c)                # add child's space to subtotal
     return subtotal
+
+def layout(T, p, d, x):
+    if T.left(p) is not	None:
+        x = layout(T, T.left(p), d+1, x)            #  resulting x will be increased
+    p.element().setX(x)
+    p.element().setY(d)
+    x =	x+1   	      	      	       	            # increment x
+    if T.right(p) is not None:
+        x = layout(T, T.right(p), d+1, x)           #  resulting x will be increased
+    return x
