@@ -20,6 +20,8 @@ class ExpressionTree(LinkedBinaryTree):
         if left is not None:                                   # presumably three-parameter form
             if token not in '+-*x/':
                 raise ValueError('token must be valid operator')
+            if not isinstance(left,ExpressionTree) or not isinstance(right,ExpressionTree):
+                raise TypeError('left and right must be expression trees')
             self._attach(self.root(), left, right)             # use inherited, nonpublic method
 
     def __str__(self):
