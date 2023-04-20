@@ -50,9 +50,9 @@ class ExpressionTree(LinkedBinaryTree):
         if self.is_leaf(p):
             return float(p.element())                          # we assume element is numeric
         else:
-            op = p.element()
             left_val = self._evaluate_recur(self.left(p))
             right_val = self._evaluate_recur(self.right(p))
+            op = p.element()
             if op == '+':
                 return left_val + right_val
             elif op == '-':
