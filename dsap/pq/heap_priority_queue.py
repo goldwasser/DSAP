@@ -21,7 +21,7 @@ class HeapPriorityQueue(PriorityQueueBase):         # base class defines _Item
         return self._right(j) < len(self._data)     # index beyond end of list?
 
     def _swap(self, i, j):
-        """Swap the elements at indices i and j of array."""
+        """Swap the items at indices i and j of array."""
         self._data[i], self._data[j] = self._data[j], self._data[i]
 
     def _upheap(self, j):
