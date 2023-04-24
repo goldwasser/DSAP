@@ -112,3 +112,5 @@ def figure_14_6_2():
         ('JFK', 'BOS', 187),
         )
     return graph_from_edgelist(E, False)
+
+figure_14_7_2 = figure_14_6_2    # same graph
