@@ -46,7 +46,7 @@ class AdaptableHeapPriorityQueue(HeapPriorityQueue):
         j = self._validate(loc)
         loc._key = newkey
         loc._value = newvalue
-        self._bubble(j)           # heap property might need to be restored with new key
+        self._bubble(j)                         # restore heap property
 
     def remove(self, loc):
         """Remove and return the (k,v) pair identified by Locator loc."""
