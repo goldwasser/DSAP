@@ -1,4 +1,5 @@
-from ..pq.pq import HeapPriorityQueue,AdaptableHeapPriorityQueue
+from ..pq.heap_priority_queue import HeapPriorityQueue
+from ..pq.adaptable_heap_priority_queue import AdaptableHeapPriorityQueue
 from .partition import Partition
 
 def MST_PrimJarnik(g):
