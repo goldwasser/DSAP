@@ -50,9 +50,7 @@ class AdaptableHeapPriorityQueue(HeapPriorityQueue):
 
     def remove(self, loc):
         """Remove and return the (k,v) pair identified by Locator loc."""
-        j = loc._index
-        if not (0 <= j < len(self) and self._data[j] is loc):
-            raise ValueError('Invalid locator')
+        j = self._validate(loc)
         if j == len(self) - 1:                  # item at last position
             self._data.pop()                    # just remove it
         else:
