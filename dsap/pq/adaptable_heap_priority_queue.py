@@ -26,7 +26,7 @@ class AdaptableHeapPriorityQueue(HeapPriorityQueue):
             self._downheap(j)
 
     def _validate(self, loc):
-        if not isinstance(loc,self.Locator):                   # ensure Locator Instance given
+        if not isinstance(loc,self.Locator):                   # ensure loc is a Locator
             raise TypeError('Invalid locator')
         j = loc._index
         if not (0 <= j < len(self) and self._data[j] is loc):  # ensure locator matches this PQ
