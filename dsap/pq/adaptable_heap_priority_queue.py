@@ -25,22 +25,28 @@ class AdaptableHeapPriorityQueue(HeapPriorityQueue):
         else:
             self._downheap(j)
 
+    def _validate(self, loc):
+        if not isinstance(loc,self.Locator):                   # ensure Locator Instance given
+            raise TypeError('Invalid locator')
+        j = loc._index
+        if not (0 <= j < len(self) and self._data[j] is loc):  # ensure locator matches this PQ
+            raise ValueError('Invalid locator')
+        return j                                               # return locator's index in the list
+
     #------------------------------ public behaviors ------------------------------
     def add(self, key, value):
-        """Add a key-value pair."""
-        token = self.Locator(key, value, len(self._data)) # initiaize locator index
+        """Add a key-value pair and return a Locator for the new entry."""
+        token = self.Locator(key, value, len(self._data)) # initialize locator index
         self._data.append(token)
         self._upheap(len(self._data) - 1)
         return token
 
-    def update(self, loc, newkey, newval):
+    def update(self, loc, newkey, newvalue):
         """Update the key and value for the entry identified by Locator loc."""
-        j = loc._index
-        if not (0 <= j < len(self) and self._data[j] is loc):
-            raise ValueError('Invalid locator')
+        j = self._validate(loc)
         loc._key = newkey
-        loc._value = newval
-        self._bubble(j)
+        loc._value = newvalue
+        self._bubble(j)           # heap property might need to be restored with new key
 
     def remove(self, loc):
         """Remove and return the (k,v) pair identified by Locator loc."""
