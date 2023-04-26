@@ -80,6 +80,30 @@ class SortedTableMap(MapBase):
         else:
             return None
 
+    def find_ge(self, k):
+        """Return (key,value) pair with least key greater than or equal to k.
+
+        Return None if there does not exist such a key.
+        """
+        j = self._find_index(k)                                      # j's key >= k
+        if j < len(self._table):
+            return (self._table[j]._key, self._table[j]._value)
+        else:
+            return None
+
+    def find_gt(self, k):
+        """Return (key,value) pair with least key strictly greater than k.
+
+        Return None if there does not exist such a key.
+        """
+        j = self._find_index(k)                                      # j's key >= k
+        if j < len(self._table) and self._table[j]._key == k:
+            j += 1                                                   # advanced past exact match
+        if j < len(self._table):
+            return (self._table[j]._key, self._table[j]._value)
+        else:
+            return None
+
     def find_le(self, k):
         """Return (key,value) pair with greatest key less than or equal to k.
 
@@ -93,17 +117,6 @@ class SortedTableMap(MapBase):
         else:
             return None
 
-    def find_ge(self, k):
-        """Return (key,value) pair with least key greater than or equal to k.
-
-        Return None if there does not exist such a key.
-        """
-        j = self._find_index(k)                                      # j's key >= k
-        if j < len(self._table):
-            return (self._table[j]._key, self._table[j]._value)
-        else:
-            return None
-
     def find_lt(self, k):
         """Return (key,value) pair with greatest key strictly less than k.
 
@@ -112,19 +125,6 @@ class SortedTableMap(MapBase):
         j = self._find_index(k)                                      # j's key >= k
         if j > 0:
             return (self._table[j-1]._key, self._table[j-1]._value)  # Note use of j-1
-        else:
-            return None
-
-    def find_gt(self, k):
-        """Return (key,value) pair with least key strictly greater than k.
-
-        Return None if there does not exist such a key.
-        """
-        j = self._find_index(k)                                      # j's key >= k
-        if j < len(self._table) and self._table[j]._key == k:
-            j += 1                                                   # advanced past match
-        if j < len(self._table):
-            return (self._table[j]._key, self._table[j]._value)
         else:
             return None
 
