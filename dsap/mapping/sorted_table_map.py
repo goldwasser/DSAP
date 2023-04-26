@@ -10,8 +10,8 @@ class SortedTableMap(MapBase):
         Return len(self) if no such item qualifies.
 
         That is, j will be returned such that:
-        all items of slice table[ :j] have key < k
-        all items of slice table[j: ] have key >= k
+           all items of slice table[ :j] have key < k
+           all items of slice table[j: ] have key >= k
         """
         low = 0
         high = len(self._table) - 1
