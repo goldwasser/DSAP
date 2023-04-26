@@ -21,7 +21,7 @@ class SortedTableMap(MapBase):
                 return mid                                           #    at index mid
             elif k < self._table[mid]._key:                          # target is smaller than _table[mid]
                 high = mid-1                                         #    so continue searching left of mid
-            else:                                                    # target is less than _table[mid]
+            else:                                                    # target is larger than _table[mid]
                 low = mid + 1                                        #    so continue searching right of mid
         return low                                                   # low = 1+high for unsuccessful search
 
