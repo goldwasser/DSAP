@@ -55,7 +55,6 @@ class TreeMap(LinkedBinaryTree, MapBase):
 
         Return None if p is the first position.
         """
-        self._validate(p)                                    # inherited from LinkedBinaryTree
         if self.left(p):
             return self._subtree_last_position(self.left(p))
         else:
@@ -72,7 +71,6 @@ class TreeMap(LinkedBinaryTree, MapBase):
 
         Return None if p is the last position.
         """
-        self._validate(p)                                    # inherited from LinkedBinaryTree
         if self.right(p):
             return self._subtree_first_position(self.right(p))
         else:
@@ -94,7 +92,6 @@ class TreeMap(LinkedBinaryTree, MapBase):
 
     def delete(self, p):
         """Remove the item at given Position."""
-        self._validate(p)                                    # inherited from LinkedBinaryTree
         if self.left(p) and self.right(p):                   # p has two children
             replacement = self._subtree_last_position(self.left(p))
             self._replace(p, replacement.element())          # from LinkedBinaryTree
