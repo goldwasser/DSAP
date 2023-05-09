@@ -4,22 +4,22 @@ class SortedTableMap(MapBase):
     """Map implementation using a sorted table."""
 
     #----------------------------- nonpublic behaviors -----------------------------
-    def _find_index(self, k):
-        """Return index of the leftmost item with key greater than or equal to k.
+    def _find_index(self, target):
+        """Return index of the leftmost item with key greater than or equal to target.
 
         Return len(self) if no such item qualifies.
 
         That is, j will be returned such that:
-           all items of slice table[ :j] have key < k
-           all items of slice table[j: ] have key >= k
+           all items of slice table[ :j] have key < target
+           all items of slice table[j: ] have key >= target
         """
         low = 0
         high = len(self._table) - 1
         while low <= high:
             mid = (low + high) // 2
-            if k == self._table[mid]._key:                           # exact match found
+            if target == self._table[mid]._key:                      # exact match found
                 return mid                                           #    at index mid
-            elif k < self._table[mid]._key:                          # target is smaller than _table[mid]
+            elif target < self._table[mid]._key:                     # target is smaller than _table[mid]
                 high = mid - 1                                       #    so continue searching left of mid
             else:                                                    # target is larger than _table[mid]
                 low = mid + 1                                        #    so continue searching right of mid
