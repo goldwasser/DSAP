@@ -5,7 +5,7 @@ class SortedTableMap(MapBase):
 
     #----------------------------- nonpublic behaviors -----------------------------
     def _find_index(self, target):
-        """Return index of the leftmost item with key greater than or equal to target.
+        """Return index of the leftmost item with key greater than or equal to target key.
 
         Return len(self) if no such item qualifies.
 
