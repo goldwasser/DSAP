@@ -39,8 +39,9 @@ class Graph:
             """Return the vertex that is opposite v on this edge."""
             if not isinstance(v, Graph.Vertex):
                 raise TypeError('v must be a Vertex')
+            if v not in self.endpoints():
+                raise ValueError('v not incident to edge')
             return self._destination if v is self._origin else self._origin
-            raise ValueError('v not incident to edge')
 
         def element(self):
             """Return element associated with this edge."""
