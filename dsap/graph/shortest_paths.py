@@ -1,3 +1,5 @@
+"""Provides shortest_path_distances and shortest_path_tree functions for computing shortest paths in a weighted graph."""
+
 from ..pq.adaptable_heap_priority_queue import AdaptableHeapPriorityQueue
 
 def shortest_path_distances(g, src):

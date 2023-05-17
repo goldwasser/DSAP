@@ -1,3 +1,5 @@
+"""Provides three functions for computing prefix averages of a numeric sequence."""
+
 def prefix_average1(S):
     """Return a list such that, for all j, A[j] equals the average of S[0], ..., S[j]."""
     n = len(S)

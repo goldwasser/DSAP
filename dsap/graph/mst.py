@@ -1,3 +1,5 @@
+"""Provides MST_PrimJarnik and MST_Kruskal functions for computing the minimum spanning tree of a graph."""
+
 from ..pq.heap_priority_queue import HeapPriorityQueue
 from ..pq.adaptable_heap_priority_queue import AdaptableHeapPriorityQueue
 from .partition import Partition

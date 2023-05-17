@@ -1,4 +1,4 @@
-"""A demonstration of try/except clause involving user input."""
+"""Demonstrates a try/except clause involving user input."""
 
 age = -1                    # an initially invalid choice
 while age <= 0:

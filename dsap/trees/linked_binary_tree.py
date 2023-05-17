@@ -1,3 +1,5 @@
+"""Provides the LinkedBinaryTree class providing a node-based representation of a binary tree."""
+
 from .binary_tree import BinaryTree
 
 class LinkedBinaryTree(BinaryTree):

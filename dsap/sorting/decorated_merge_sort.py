@@ -1,3 +1,5 @@
+"""Provides a demonstration of the decorate-sort-undecorate pattern as a decorated_merge_sort function."""
+
 from .merge_array import merge_sort
 
 class _Item:

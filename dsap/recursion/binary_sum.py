@@ -1,3 +1,5 @@
+"""Provides recursive function binary_sum computing the sum of a sequence of numbers."""
+
 def binary_sum(S, start, stop):
     """Return the sum of the numbers in implicit slice S[start:stop]."""
     if start >= stop:                      # zero elements in slice

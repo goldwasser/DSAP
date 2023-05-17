@@ -1,3 +1,5 @@
+"""Provides the FavoritesListMTF class maintaining a list of elements ordered by most-recent access."""
+
 from .favorites_list import FavoritesList
 from .positional_list import PositionalList
 

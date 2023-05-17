@@ -1,3 +1,5 @@
+"""Provides is_matched_html function as use case for a stack."""
+
 def is_matched_html(raw):
     """Return True if all HTML tags are properly match; False otherwise."""
     S = ArrayStack()

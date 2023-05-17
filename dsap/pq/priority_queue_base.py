@@ -1,3 +1,5 @@
+"""Provides the PriorityQueueBase class that is used by several concrete priority queue implementations."""
+
 from ..exceptions import Empty
 
 class PriorityQueueBase:

@@ -1,3 +1,5 @@
+"""Provides iterative function to reverse elements of a sequence."""
+
 def reverse_iterative(S):
     """Reverse elements in sequence S."""
     start, stop = 0, len(S)

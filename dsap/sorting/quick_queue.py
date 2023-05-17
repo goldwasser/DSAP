@@ -1,3 +1,5 @@
+"""Provides the quick_sort function implementing quick-sort on elements from a FIFO queue."""
+
 from ..linkedlist.linked_queue import LinkedQueue
 
 def quick_sort(S):

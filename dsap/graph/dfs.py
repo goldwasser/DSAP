@@ -1,3 +1,5 @@
+"""Provides DFS, DFS_complete, and  construct_path functions for depth-first search of a graph."""
+
 def DFS(g, u, discovered):
     """Perform DFS of the undiscovered portion of Graph g starting at Vertex u.
 

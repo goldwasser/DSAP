@@ -1,3 +1,5 @@
+"""Provides the FavoritesList class maintaining a list of elements ordered by access frequency."""
+
 from .positional_list import PositionalList
 
 class FavoritesList:

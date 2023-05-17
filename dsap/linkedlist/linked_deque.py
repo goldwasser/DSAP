@@ -1,3 +1,5 @@
+"""Provides the LinkedDeque class implementing a double-ended queue with a linked list."""
+
 from .doubly_linked_base import _DoublyLinkedBase
 from ..exceptions import Empty
 

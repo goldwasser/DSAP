@@ -1,3 +1,5 @@
+"""Provides a DynamicArray class built on first principles using low-level arrays"""
+
 import ctypes                                          # provides low-level arrays
 
 class DynamicArray:

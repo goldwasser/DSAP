@@ -1,3 +1,5 @@
+"""Provides recursive functions bad_fibonacci and good_fibonacci."""
+
 def bad_fibonacci(n):
     """Return the nth Fibonacci number."""
     if n <= 1:

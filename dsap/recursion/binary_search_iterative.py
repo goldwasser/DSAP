@@ -1,3 +1,5 @@
+"""Provides iterative binary_search_iterative function."""
+
 def binary_search_iterative(data, target):
     """Return True if target is found in the given Python list."""
     low = 0

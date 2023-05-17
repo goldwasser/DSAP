@@ -1,3 +1,5 @@
+"""Performs empirical testing of efficiency of list.append."""
+
 import sys
 from time import time
 

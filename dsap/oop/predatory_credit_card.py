@@ -1,6 +1,4 @@
-"""
-Provides a PredatoryCreditCard class as an example of inheritance.
-"""
+"""Provides the PredatoryCreditCard class as an example of inheritance."""
 
 from .credit_card import CreditCard
 

@@ -1,3 +1,5 @@
+"""Provides floyd_warshall function  for computing the transitive closure of a graph."""
+
 from copy import deepcopy
 
 def floyd_warshall(g):

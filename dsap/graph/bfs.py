@@ -1,3 +1,5 @@
+"""Provides BFS and BFS_complete function to support breadth-first search of a graph."""
+
 def BFS(g, s, discovered):
     """Perform BFS of the undiscovered portion of Graph g starting at Vertex s.
 

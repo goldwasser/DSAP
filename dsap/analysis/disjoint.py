@@ -1,3 +1,5 @@
+"""Provides two functions for testing three-way set disjointness."""
+
 def disjoint1(A, B, C):
     """Return True if there is no element common to all three lists."""
     for a in A:

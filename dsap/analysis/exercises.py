@@ -1,3 +1,5 @@
+"""Provides code for end-of-chapter exercises."""
+
 def example1(S):
     """Return the sum of the elements in sequence S."""
     n = len(S)

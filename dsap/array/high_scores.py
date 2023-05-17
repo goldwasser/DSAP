@@ -1,3 +1,5 @@
+"""Provides GameEntry and Scoreboard class for a high-score board case study."""
+
 class GameEntry:
     """Represents one entry of a list of high scores."""
     def __init__(self, name, score):

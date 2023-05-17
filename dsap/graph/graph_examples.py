@@ -1,3 +1,5 @@
+"""Provides graph instances used in the book's examples."""
+
 from .graph import Graph
 
 def graph_from_edgelist(E, directed=False):

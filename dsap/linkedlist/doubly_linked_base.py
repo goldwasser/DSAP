@@ -1,3 +1,5 @@
+"""Provides the _DoublyLinkedBase class providing an underling doubly linked list representation."""
+
 class _DoublyLinkedBase:
     """A base class providing a doubly linked list representation."""
 

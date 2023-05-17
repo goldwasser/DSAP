@@ -1,3 +1,5 @@
+"""Provides a find_max function locating the maximum value in a sequence."""
+
 def find_max(data):
     """Return the maximum element from a nonempty Python list."""
     biggest = data[0]               # The initial value to beat

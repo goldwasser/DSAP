@@ -1,3 +1,5 @@
+"""Provides is_matched function as a use case for a stack."""
+
 def is_matched(expr):
     """Return True if all delimiters are properly match; False otherwise."""
     lefty = '({['                                       # opening delimiters

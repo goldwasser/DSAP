@@ -1,3 +1,5 @@
+"""Provides the LinkedStack class implementing a stack with a singly linked list."""
+
 from ..exceptions import Empty
 
 class LinkedStack:

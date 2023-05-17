@@ -1,3 +1,5 @@
+"""Provides the HeapPriorityQueue class."""
+
 from .priority_queue_base import PriorityQueueBase
 from ..exceptions import Empty
 

@@ -1,6 +1,4 @@
-"""
-Provides a Vector class representing multidimensional coordinates.
-"""
+"""Provides the Vector class representing multidimensional coordinates."""
 
 import collections
 

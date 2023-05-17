@@ -1,3 +1,5 @@
+"""Provides several example applications for tree traversals."""
+
 def toc_plain(T):
     for p in T.preorder():
         print(p.element())

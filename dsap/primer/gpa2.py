@@ -1,3 +1,5 @@
+"""Provides a compute_gpa function to compute the GPA based on a sequence of grades sent as a parameter."""
+
 def compute_gpa(grades, points={'A+':4.0, 'A':4.0, 'A-':3.67, 'B+':3.33,
                                 'B':3.0, 'B-':2.67,'C+':2.33, 'C':2.0,
                                 'C':1.67, 'D+':1.33, 'D':1.0, 'F':0.0}):

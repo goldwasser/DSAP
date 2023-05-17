@@ -1,3 +1,5 @@
+"""Provides recursive disk_usage(path) function, computing the number of bytes used by a file/folder."""
+
 import os
 
 def disk_usage(path):

@@ -1,3 +1,5 @@
+"""Provides the ExpressionTree class as a use case of a specialized tree."""
+
 from .linked_binary_tree import LinkedBinaryTree
 
 class ExpressionTree(LinkedBinaryTree):

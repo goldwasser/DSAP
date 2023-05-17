@@ -1,3 +1,5 @@
+"""Provides the find_kmp function and compute_kmp_fail utility to perform a text search using the Knuth-Morris-Pratt algorithm."""
+
 def find_kmp(T, P):
     """Return the lowest index of T at which substring P begins (or else -1)."""
     n, m = len(T), len(P)                # introduce convenient notations

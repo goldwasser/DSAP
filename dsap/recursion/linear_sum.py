@@ -1,3 +1,5 @@
+"""Provides recursive function linear_sum(S,n) that returns sum of first n numbers of sequence S."""
+
 def linear_sum(S, n):
     """Return the sum of the first n numbers of sequence S."""
     if n == 0:

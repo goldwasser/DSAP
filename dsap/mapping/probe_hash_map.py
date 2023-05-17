@@ -1,3 +1,5 @@
+"""Provides the ProbeHashMap implementing a map using hashing with linear probing."""
+
 from .hash_map_base import HashMapBase
 
 class ProbeHashMap(HashMapBase):

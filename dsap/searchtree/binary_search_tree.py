@@ -1,3 +1,5 @@
+"""Provides the TreeMap class implementing a map using an (unbalanced) binary search tree."""
+
 from ..trees.linked_binary_tree import LinkedBinaryTree
 from ..mapping.map_base import MapBase
 

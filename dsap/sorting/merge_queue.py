@@ -1,3 +1,5 @@
+"""Provides bottom-up iterative merge-sort implementation for elements from a queue."""
+
 from ..linkedlist.linked_queue import LinkedQueue
 
 def merge(S1, S2, S):

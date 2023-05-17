@@ -1,3 +1,5 @@
+"""Provides the SplayTreeMap class implementing a map using a splay tree."""
+
 from .binary_search_tree import TreeMap
 
 class SplayTreeMap(TreeMap):

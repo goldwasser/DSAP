@@ -1,3 +1,5 @@
+"""Provides quadratic unique1 and n-log-n unique2 functions determining if a sequence contains duplicates."""
+
 def unique1(S):
     """Return True if there are no duplicate elements in sequence S."""
     for j in range(len(S)):

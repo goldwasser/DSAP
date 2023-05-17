@@ -1,6 +1,4 @@
-"""
-Provides a Sequence abstract base class
-"""
+"""Provides the Sequence class as an example of a abstract base class."""
 
 from abc import ABCMeta, abstractmethod                # need these definitions
 

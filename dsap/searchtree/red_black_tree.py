@@ -1,3 +1,5 @@
+"""Provides the RedBlackTreeMap class implementing a map using a red-black tree."""
+
 from .binary_search_tree import TreeMap
 
 class RedBlackTreeMap(TreeMap):

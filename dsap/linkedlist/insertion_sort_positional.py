@@ -1,3 +1,5 @@
+"""Provides insertion_sort function that sorts a PositionalList."""
+
 def insertion_sort(L):
     """Sort PositionalList of comparable elements into nondecreasing order."""
     if len(L) > 1:                          # otherwise, no need to sort it

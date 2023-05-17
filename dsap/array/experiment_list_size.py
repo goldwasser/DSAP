@@ -1,3 +1,4 @@
+"""Performs empirical testing of dynamic resizing of a Python list."""
 import sys
 
 try:

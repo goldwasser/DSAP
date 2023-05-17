@@ -1,3 +1,5 @@
+"""Provides reverse_file function as use case for a stack."""
+
 def reverse_file(filename):
     """Overwrite given file with its contents line-by-line reversed."""
     S = ArrayStack()

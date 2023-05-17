@@ -1,3 +1,5 @@
+"""A simple demonstration of a complete script, computing the ideal maximum heart rate based on input from a user."""
+
 age = int(input('Enter your age in years: '))
 max_heart_rate = 206.9 - (0.67 * age)           # as per Med Sci Sports Exerc.
 target = 0.65 * max_heart_rate

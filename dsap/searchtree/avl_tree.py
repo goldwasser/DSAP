@@ -1,3 +1,5 @@
+"""Provides the AVLTreeMap class implementing a map using an AVL tree."""
+
 from .binary_search_tree import TreeMap
 
 class AVLTreeMap(TreeMap):

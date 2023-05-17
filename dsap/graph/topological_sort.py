@@ -1,3 +1,5 @@
+"""Provides topological_sort function that computes a topological order for a directed acyclic graph"""
+
 def topological_sort(g):
     """Return a list of verticies of directed acyclic graph g in topological order.
 

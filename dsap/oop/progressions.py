@@ -1,6 +1,4 @@
-"""
-Provides a Progression class that serves as a base class for several other classes.
-"""
+"""Provides the Progression class that serves as a base class for several other classes."""
 
 class Progression:
     """Iterator producing a generic progression.

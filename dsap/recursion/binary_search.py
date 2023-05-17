@@ -1,3 +1,5 @@
+"""Provides recursive binary_search function."""
+
 def binary_search(data, target, low, high):
     """Return True if target is found in indicated portion of a Python list.
 

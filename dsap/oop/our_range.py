@@ -1,6 +1,4 @@
-"""
-Provides an OurRange class that mimics the built-in range class.
-"""
+"""Provides the OurRange class which mimics the built-in range class."""
 
 class OurRange:
     """A class that mimics the built-in range class."""

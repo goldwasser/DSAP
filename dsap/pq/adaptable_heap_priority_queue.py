@@ -1,3 +1,5 @@
+"""Provides the AdaptableHeapPriorityQueue class."""
+
 from .heap_priority_queue import HeapPriorityQueue
 
 class AdaptableHeapPriorityQueue(HeapPriorityQueue):

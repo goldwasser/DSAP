@@ -1,3 +1,5 @@
+"""Provides the MultiMap class demonstrating an adaptation of a standard map."""
+
 class MultiMap:
     """
     A multimap class built upon use of an underlying map for storage.

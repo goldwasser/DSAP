@@ -1,3 +1,5 @@
+"""Demonstrates a try/except clause with two different except clauses."""
+
 age = -1                       # an initially invalid choice
 while age <= 0:
     try:

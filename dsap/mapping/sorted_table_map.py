@@ -1,3 +1,5 @@
+"""Provides a SortedTableMap class implementing the sorted map ADT."""
+
 from .map_base import MapBase
 
 class SortedTableMap(MapBase):

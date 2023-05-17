@@ -1,3 +1,5 @@
+"""Provides the BinaryTree class as an abstract base class for the binary tree ADT."""
+
 from .tree import Tree
 
 class BinaryTree(Tree):

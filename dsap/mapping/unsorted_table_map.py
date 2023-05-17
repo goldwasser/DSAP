@@ -1,3 +1,5 @@
+"""Provides the UnsortedTableMap class implementing a simple map."""
+
 from .map_base import MapBase
 
 class UnsortedTableMap(MapBase):

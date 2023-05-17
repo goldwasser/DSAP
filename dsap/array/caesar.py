@@ -1,3 +1,5 @@
+"""Provides a CaesarCipher class for encryption and decryption using a Caesar cipher."""
+
 class CaesarCipher:
     """Class for doing encryption and decryption using a Caesar cipher."""
 

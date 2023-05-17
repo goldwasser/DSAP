@@ -1,3 +1,5 @@
+"""Provides an inefficient recursive algorithm unique3, for testing if a sequence contains duplicates."""
+
 # WARNING: this is a terribly inefficient algorithm
 def unique3(S, start, stop):
     """Return True if there are no duplicate elements in slice S[start:stop]."""

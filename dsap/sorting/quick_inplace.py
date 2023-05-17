@@ -1,3 +1,5 @@
+"""Provides in-place implementation of quick-sort for elements in an array-based sequence."""
+
 def inplace_quick_sort(S, a, b):
     """Sort the list from S[a] to S[b] inclusive using the quick-sort algorithm."""
     if a >= b: return                                      # range is trivially sorted

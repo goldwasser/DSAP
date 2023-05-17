@@ -1,3 +1,5 @@
+"""Provides recursive function to reverse elements of a sequence."""
+
 def reverse(S, start, stop):
     """Reverse elements in implicit slice S[start:stop]."""
     if start < stop - 1:                           # if at least 2 elements:

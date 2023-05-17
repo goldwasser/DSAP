@@ -1,3 +1,5 @@
+"""Provides a find function, locating a value in a sequence."""
+
 def find(S, val):
     """Return index j such that S[j] == val, or -1 if no such element."""
     n = len(S)

@@ -1,3 +1,5 @@
+"""Provides bottom-up iterative merge-sort implementation as merge_sort function and merge utility function."""
+
 import math
 
 def merge(src, result, start, inc):

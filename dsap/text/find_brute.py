@@ -1,3 +1,5 @@
+"""Provides the find_brute to perform a text search using the brute-force algorithm."""
+
 def find_brute(T, P):
     """Return the lowest index of T at which substring P begins (or else -1)."""
     n, m = len(T), len(P)                      # introduce convenient notations

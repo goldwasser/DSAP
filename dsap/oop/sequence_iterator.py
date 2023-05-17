@@ -1,6 +1,4 @@
-"""
-Provides a SequenceIterator as an example of a Python iterator.
-"""
+"""Provides the SequenceIterator class as an example of a Python iterator."""
 
 class SequenceIterator:
     """An iterator for any of Python's sequence types."""

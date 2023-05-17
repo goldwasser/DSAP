@@ -1,3 +1,5 @@
+"""Provides recursive function power(x,n) that uses repeated squaring technique."""
+
 def power(x, n):
     """Compute the value x**n for integer n."""
     if n == 0:

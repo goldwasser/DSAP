@@ -1,3 +1,5 @@
+"""Provides the CostPerformanceDatabase class demonstrating a use case for a sorted map."""
+
 from .sorted_table_map import SortedTableMap
 
 class CostPerformanceDatabase:

@@ -1,3 +1,5 @@
+"""Provides the PositionalList class providing a position-based abstraction of a sequence."""
+
 from .doubly_linked_base import _DoublyLinkedBase
 
 class PositionalList(_DoublyLinkedBase):

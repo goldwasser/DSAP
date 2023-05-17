@@ -1,3 +1,5 @@
+"""Provides the MapBase class used by various concrete map implementations."""
+
 from collections import MutableMapping
 
 class MapBase(MutableMapping):

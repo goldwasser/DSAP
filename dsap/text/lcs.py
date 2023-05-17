@@ -1,3 +1,5 @@
+"""Provides the LCS and LCS_solution functions computing a longest-common substring of two strings."""
+
 def LCS(X, Y):
     """Return table such that L[j][k] is length of LCS for X[0:j] and Y[0:k]."""
     n, m = len(X), len(Y)                          # introduce convenient notations

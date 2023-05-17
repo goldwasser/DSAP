@@ -1,3 +1,5 @@
+"""A case study computing word frequencies within a text document."""
+
 import sys
 filename = sys.argv[1]
 

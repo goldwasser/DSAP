@@ -1,3 +1,5 @@
+"""Provides a simple function sum(values) that includes rigorous error checking."""
+
 import collections
 
 def sum(values):

@@ -1,3 +1,5 @@
+"""Provides the Tree class as an abstract base class for the Tree ADT."""
+
 from ..linkedlist.linked_queue import LinkedQueue
 import collections
 

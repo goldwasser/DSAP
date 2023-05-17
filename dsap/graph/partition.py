@@ -1,8 +1,15 @@
+"""Provides the Partition class maintaining a disjoint partition of a universe of elements."""
+
 class Partition:
     """Union-find structure for maintaining disjoint sets."""
 
     #------------------------- nested Position class -------------------------
     class Position:
+        """A representation of a universe of elements organized into disjoint subsets.
+
+        This implementation uses a tree-based representation of sets with path compression
+        during the find operation and performing unions with union-by-size heuristic.
+        """
         __slots__ = '_container', '_element', '_size', '_parent'
 
         def __init__(self, container, e):

@@ -1,3 +1,5 @@
+"""Provides the ArrayQueue class implementing a queue with an array-based sequence."""
+
 from ..exceptions import Empty
 
 class ArrayQueue:

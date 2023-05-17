@@ -1,3 +1,5 @@
+"""Provides matrix_chain function as an example of dynamic programming."""
+
 def matrix_chain(d):
     """Return solution to the matrix chain problem.
 

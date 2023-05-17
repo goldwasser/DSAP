@@ -1,3 +1,5 @@
+"""Provides the LinkedQueue class implementing a FIFO queue with a singly linked list."""
+
 from ..exceptions import Empty
 
 class LinkedQueue:

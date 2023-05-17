@@ -1,3 +1,5 @@
+"""Provides the ChainHashMap class implementing a map using hashing with separate chaining."""
+
 from .hash_map_base import HashMapBase
 from .unsorted_table_map import UnsortedTableMap
 

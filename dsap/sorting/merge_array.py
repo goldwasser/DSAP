@@ -1,3 +1,5 @@
+"""Provides recursive merge-sort implementation for array-based sequence, in form of merge_sort function and merge utility function."""
+
 def merge(S1, S2, S):
     """Merge two sorted Python lists S1 and S2 into properly sized list S."""
     i = j = 0

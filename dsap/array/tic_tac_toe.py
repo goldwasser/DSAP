@@ -1,3 +1,5 @@
+"""Provides a TicTacToe class demonstrating the representation of two-dimensional data."""
+
 class TicTacToe:
     """Management of a Tic-Tac-Toe game (does not do strategy)."""
 

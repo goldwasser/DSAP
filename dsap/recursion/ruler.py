@@ -1,3 +1,5 @@
+"""Provides draw_ruler function, and utilities draw_line and draw_interval, for displaying an English ruler."""
+
 def draw_line(tick_length, tick_label=''):
     """Draw one line with given tick length (followed by optional label)."""
     line = '-' * tick_length

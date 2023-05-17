@@ -1,3 +1,5 @@
+"""Provides Graph class and nested Vertex and Edge classes for representing a graph structure."""
+
 class Graph:
     """Representation of a simple graph using an adjacency map."""
 

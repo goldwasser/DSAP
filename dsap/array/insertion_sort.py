@@ -1,3 +1,5 @@
+"""Provides an implementation of insertion-sort for an array-based sequence."""
+
 def insertion_sort(A):
     """Sort list of comparable elements into nondecreasing order."""
     for k in range(1, len(A)):           # from 1 to n-1

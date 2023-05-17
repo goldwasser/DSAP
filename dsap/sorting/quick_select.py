@@ -1,3 +1,5 @@
+"""Provides the quick_select function to perform randomized selection in linear time."""
+
 import random
 
 def quick_select(S, k):

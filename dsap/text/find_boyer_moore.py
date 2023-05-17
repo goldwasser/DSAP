@@ -1,3 +1,5 @@
+"""Provides the find_boyer_moore function to perform a text search using the Boyer-Moore algorithm."""
+
 def find_boyer_moore(T, P):
     """Return the lowest index of T at which substring P begins (or else -1)."""
     n, m = len(T), len(P)                       # introduce convenient notations

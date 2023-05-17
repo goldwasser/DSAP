@@ -1,3 +1,5 @@
+"""Provides the LinkedCircularqueue class implementing a queue with a circularly linked list."""
+
 from ..exceptions import Empty
 
 class LinkedCircularQueue:
