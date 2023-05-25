@@ -3,7 +3,7 @@
 from abc import ABCMeta, abstractmethod                # need these definitions
 
 class Sequence(metaclass=ABCMeta):
-    """Our own version of collections.Sequence abstract base class."""
+    """Our own version of collections.abc.Sequence abstract base class."""
 
     @abstractmethod
     def __len__(self):

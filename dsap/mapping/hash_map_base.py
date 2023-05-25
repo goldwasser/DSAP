@@ -1,7 +1,6 @@
 """Provides the HashMapBase class used by several concrete map implementations."""
 
 from .map_base import MapBase
-from collections import MutableMapping
 from random import randrange                          # used to pick MAD parameters
 
 class HashMapBase(MapBase):

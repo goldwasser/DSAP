@@ -1,6 +1,6 @@
 """Provides the MapBase class used by various concrete map implementations."""
 
-from collections import MutableMapping
+from collections.abc import MutableMapping
 
 class MapBase(MutableMapping):
     """Our own abstract base class that includes a nonpublic _Item class."""

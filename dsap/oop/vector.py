@@ -1,7 +1,5 @@
 """Provides the Vector class representing multidimensional coordinates."""
 
-import collections
-
 class Vector:
     """Represent a vector in a multidimensional space."""
 

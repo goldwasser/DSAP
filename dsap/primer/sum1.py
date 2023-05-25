@@ -3,7 +3,7 @@
 import collections
 
 def sum(values):
-    if not isinstance(values, collections.Iterable):
+    if not isinstance(values, collections.abc.Iterable):
         raise TypeError('parameter must be an iterable type')
     total = 0
     for v in values:
