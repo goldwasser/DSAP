@@ -14,15 +14,15 @@ def preorder_indent(T, p, d):
     for c in T.children(p):
         preorder_indent(T, c, d+1)                  # child depth is d+1
 
-def preorder_label(T, p, d, path):
-    """Print labeled representation of subtree of T rooted at p at depth d."""
+def preorder_label(T, p, path):
+    """Print labeled representation of subtree of T rooted at p reached by given path."""
     label = '.'.join(str(j) for j in path)          # display path (e.g., "1.3.2")
-    print(2*d*' ' + label, p.element())
-    path.append(1)                                  # path entries are one-indexed
+    print(2*len(path)*' ' + label, p.element())
+    path.append(1)                                  # add path entry for first child
     for c in T.children(p):
-        preorder_label(T, c, d+1, path)             # child depth is d+1
-        path[-1] += 1
-    path.pop()
+        preorder_label(T, c, path)
+        path[-1] += 1                               # increase last path entry
+    path.pop()                                      # restore path to its incoming state
 
 def parenthesize(T, p):
     """Print parenthesized representation of subtree of T rooted at p."""
