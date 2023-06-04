@@ -16,9 +16,9 @@ def preorder_indent(T, p, d):
 
 def preorder_label(T, p, d, path):
     """Print labeled representation of subtree of T rooted at p at depth d."""
-    label = '.'.join(str(j+1) for j in path)        # displayed labels are one-indexed
+    label = '.'.join(str(j) for j in path)          # display path (e.g., "1.3.2")
     print(2*d*' ' + label, p.element())
-    path.append(0)                                  # path entries are zero-indexed
+    path.append(1)                                  # path entries are one-indexed
     for c in T.children(p):
         preorder_label(T, c, d+1, path)             # child depth is d+1
         path[-1] += 1
