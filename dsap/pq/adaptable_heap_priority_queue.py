@@ -7,7 +7,7 @@ class AdaptableHeapPriorityQueue(HeapPriorityQueue):
 
     #------------------------------ nested Locator class ------------------------------
     class Locator(HeapPriorityQueue._Item):
-        """Token for locating an entry of the priority queue."""
+        """Token for locating an item within the priority queue."""
         __slots__ = '_index'                    # add index as additional field
 
         def __init__(self, k, v, j):
@@ -37,14 +37,14 @@ class AdaptableHeapPriorityQueue(HeapPriorityQueue):
 
     #------------------------------ public behaviors ------------------------------
     def add(self, key, value):
-        """Add a key-value pair and return a Locator for the new entry."""
+        """Add a key-value pair and return a Locator for the new item."""
         token = self.Locator(key, value, len(self._data)) # initialize locator index
         self._data.append(token)
         self._upheap(len(self._data) - 1)
         return token
 
     def update(self, loc, newkey, newvalue):
-        """Update the key and value for the entry identified by Locator loc."""
+        """Update the key and value for the item identified by Locator loc."""
         j = self._validate(loc)
         loc._key = newkey
         loc._value = newvalue
