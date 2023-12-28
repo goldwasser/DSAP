@@ -299,7 +299,7 @@ class TreeMap(LinkedBinaryTree, MapBase):
             self._relink(x, y, True)                         # y becomes left child of x
 
     def _restructure(self, x):
-        """Perform a trinode restructure among Position x, its parent, and its grandparent.
+        """Perform a trinode restructuring among Position x, its parent, and its grandparent.
 
         Return the Position that becomes root of the restructured subtree.
 
